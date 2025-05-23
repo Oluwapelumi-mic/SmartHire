@@ -16,6 +16,7 @@ def register_route():
 def login_route():
     return login(request.json)
 
+
 @api_bp.route('/auth/me', methods=['GET'])
 @token_required
 def me_route(current_user):
